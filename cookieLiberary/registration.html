@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+
+    <style>
+        /* styles.css */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+
+        }
+
+        #registrationForm {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 600px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: inline-block;
+        }
+
+        div {
+            margin: 12px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .gender-options {
+            display: flex;
+        }
+
+        .gender-options label {
+            margin-right: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="profile.html" id="registrationForm">
+        <div>
+            <label for="username">Enter your name:</label>
+            <input type="text" id="username">
+        </div>
+        <div>
+            <label for="age">Enter your age:</label>
+            <input type="number" name="" id="age">
+        </div>
+        <div>
+            Choose your Gender:
+            <div>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female"><img src="2.jpg" alt=""></label>
+
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male"><img src="1.jpg" alt=""></label>
+            </div>
+        </div>
+        <div>
+            Choose your favourite color:
+            <select name="color" id="">
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+            </select>
+        </div>
+        <input type="submit" value="register">
+    </form>
+
+
+
+    <script src="cookieHandler.js"></script>
+    <script src="registration.js"></script>
+
+</body>
+
+</html>
